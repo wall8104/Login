@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <div class="login-container" id="login-form-box">
+        <h2>Đăng Nhập</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Tên người dùng" required>
+            <input type="password" id="login-password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng nhập</button>
+            <p>Chưa có tài khoản? <a href="#" id="show-register">Đăng ký</a></p>
+        </form>
+    </div>
+
+    <div class="register-container" id="register-form-box" style="display: none;">
+        <h2>Đăng Ký</h2>
+        <form id="register-form">
+            <input type="text" id="register-username" placeholder="Tên người dùng" required>
+            <input type="password" id="register-password" placeholder="Mật khẩu" required>
+            <input type="password" id="register-password" placeholder="Nhập lại mật khẩu" required>
+            <button type="submit">Đăng ký</button>
+            <p>Đã có tài khoản? <a href="#" id="show-login">Đăng nhập</a></p>
+        </form>
+    </div>
+
+    <div class="update-container" id="update-form-box" style="display: none;">
+        <h2>Cập nhật thông tin</h2>
+        <form id="update-form">
+            <input type="text" id="fullname" placeholder="Họ và tên" required>
+            <input type="text" id="class" placeholder="Lớp" required>
+            <input type="text" id="studentId" placeholder="Mã số sinh viên" required>
+            <button type="submit">Cập nhật</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
